@@ -1,0 +1,61 @@
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+	margin-right: 20px;
+    border-radius: 5px;
+}
+
+.project {
+	padding: 5px 10px 5px 10px;
+	min-height: 170px;
+    margin-top: 15px;
+    background-color: #edf3f4;
+    border-radius: 5px;
+}
+blockquote {
+  border-left: 0px;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-style: italic;
+  // width: 500px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  // color: #383838;
+}
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  // color: #7a7a7a;
+}
+
+blockquote cite {
+  color: #999999;
+  // font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+.quote {
+    margin-left: 140px;
+}
+
+// .project:hover
+// {
+//     text-decoration: none;
+//     color: #000;
+// }

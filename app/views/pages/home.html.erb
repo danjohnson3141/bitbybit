@@ -1,0 +1,149 @@
+<style>
+ .carousel-control {
+      /*height: 80px;*/
+      margin-top: 0;
+      padding-top: 100px;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+      width: 7%;
+}
+.slides {
+  margin-bottom: 0px;
+  min-height: 400px;
+  max-height: 450px;
+  padding: 5px 80px 5px 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  font-size: 24px;
+}
+.normal-text {
+  font-size: 20px;
+  color: black;
+  text-shadow: black 0em 0em 0em;
+}
+.slide-1 {
+  background-image: url('<%= image_path("pile-of-circuit-boards.jpg") %> ');
+  background-position: 0% 40%;
+}
+
+.slide-2 {
+  background-image: url('<%= image_path("pile-of-circuit-boards2.jpg") %> ');
+  background-position: 0% 40%;
+  font-size: 20px;
+}
+.slide-3 {
+  background-image: url('<%= image_path("source-code1.jpg") %> ');
+  background-position: 0% 40%;
+  font-size: 38px;
+}
+.slide-4 {
+  background-image: url('<%= image_path("hd.jpeg") %> ');
+  background-position: 0% 40%;
+  font-size: 38px;
+  background-position: 0% 0%;
+}
+.slide-5 {
+  background-image: url('<%= image_path("bridge.png") %> ');
+  background-position: 0% 40%;
+  font-size: 38px;
+  background-position: 0% 0%;
+}
+
+.jumbotron:hover {
+  background-color:#000;
+  opacity:1;
+  border-radius:5px;
+}
+
+.jumbotron_link {
+  color: #C0E93F;
+  text-decoration: underline;
+}
+.jumbotron_link:hover {
+  color: white;
+  text-decoration: underline;
+}
+.slide-img {
+  height: 400px;
+  width: auto;
+}
+.div-right {
+  margin-top: -32px;
+  font-size: 16px;
+  float: right;
+  width: 434px;
+  border-radius: 8px;
+  background: rgba(12, 39, 1, 0.75);
+  padding: 5px 5px 0px 10px;
+  text-shadow: black 0.0em 0.0em 0.0em;
+}
+</style>
+
+<div id="myCarousel" class="carousel slide">
+   <!-- Carousel indicators -->
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <!-- <li data-target="#myCarousel" data-slide-to="4"></li> -->
+   </ol>   
+   <!-- Carousel items -->
+   <div class="carousel-inner">
+      <div class="item active slides slide-1">
+        <h2>Bit by Bit Recycling</h2>
+        <div class="div-right">
+          <h2>More than computers</h2>
+          <p>We take almost everything electronic with a very short list of items we cannot accept: 
+          <ul><li>major household appliances,</li><li>air conditioners</li> <li>dehumidifiers</li><li>vacuums</li><li>microwave ovens</li>
+          <li>copiers</li></ul>We are also not able to reycle large amounts of plastic (like VCR tapes and floppy disks). Please contact us via email or at 503-449-8357 for more details.</p>
+        </div>
+      <p><a class="btn btn-primary btn-lg" role="button" style="margin-top: 221px;">Learn more &raquo;</a></p>
+         <!-- <div class="carousel-caption">This Caption 1</div> -->
+      </div>
+      <div class="item slides slide-2">
+         <h2>Let your used technology help others</h2>
+         <p>A portion of refurbished computers are donated to local charities.</p>
+         <p>If you are a local area student you can earn a free computer from Bit by Bit by volunteering 16 hours of your time with us or another local charity</p>
+         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+      </div>
+      <div class="item slides slide-3">
+        <!-- <h1>Top Developer Challenges</h1> -->
+        <p style="margin-top: 120px"><blockquote><%= raw quote %></blockquote></p>
+      </div>
+      <div class="item slides slide-4">
+        <h1 style="top-margin: 100px; text-align: center;">Dashing Dashboard</h1>
+      </div>
+   </div>
+   <!-- Carousel nav -->
+   <a class="carousel-control left" href="#myCarousel" 
+      data-slide="prev">&lsaquo;</a>
+   <a class="carousel-control right" href="#myCarousel" 
+      data-slide="next">&rsaquo;</a>
+</div>
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Rails Projects</h2>
+      <p><strong>Ruby on Rails</strong>, often simply referred to as <strong>Rails</strong>, is an open source web application framework written in <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>. Rails is a full-stack framework that emphasizes the use of well-known software engineering patterns and paradigms, including <a href="http://en.wikipedia.org/wiki/Convention_over_configuration">convention over configuration</a>, <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">don't repeat yourself</a> (DRY), the <a href="http://en.wikipedia.org/wiki/Active_record_pattern">active record pattern</a>, and <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">model–view–controller</a> (MVC). </p>
+      <p><%= link_to "View Details &raquo;".html_safe, ruby_path, class: "btn btn-default" %></p>
+    </div>
+    <div class="col-md-4">
+      <h2>PHP Projects</h2>
+      <p><b>PHP</b> is a widely used <a href="http://en.wikipedia.org/wiki/Server-side_scripting" title="Server-side scripting">server-side scripting</a> language created by <a href="http://en.wikipedia.org/wiki/Rasmus_Lerdorf" title="Rasmus Lerdorf">Rasmus Lerdorf</a> in 1994. While PHP originally stood for <i>Personal Home Page</i>, it now stands for <i>"PHP: Hypertext Preprocessor"</i>, which is a <a href="http://en.wikipedia.org/wiki/Recursive_acronym" title="Recursive acronym">recursive acronym</a> or <a href="http://en.wikipedia.org/wiki/Backronym">backronym</a>.</p>
+      <p>As of January 2013, PHP was installed on more than 240 million websites (39% of those sampled) and 2.1 million web servers.</p>
+      <p><%= link_to "View Details &raquo;".html_safe, php_path, class: "btn btn-default" %></p>
+   </div>
+    <div class="col-md-4">
+      <h2>Other</h2>
+      <p>Software development is more than just writing eligent code. During my development career I have worn many hats including: Database Architect, Documenter, Test Writer, Quality Assurer, Project Manager, and Team Leader, Team Morale Booster.</p>
+      <p><%= link_to "View Details &raquo;".html_safe, other_path, class: "btn btn-default" %></p>
+    </div>
+  </div>
+</div>
