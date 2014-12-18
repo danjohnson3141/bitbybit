@@ -1,8 +1,7 @@
 module ApplicationHelper
   def site_name
     # Change the value below between the quotes.
-    "Bit by Bit Electronic Recycling | Transforming Used Technology Into Opportunity"
-    # "Turtles The Whole Way Down | A Portfolio Site for Dan Johnson"
+    "Bit by Bit Recycling | Transforming Used Technology Into Opportunity"
   end
 
   def site_url
