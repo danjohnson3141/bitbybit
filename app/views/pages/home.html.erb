@@ -34,18 +34,10 @@
 .slide-2 {
   background-image: url('<%= image_path("pile-of-circuit-boards2.jpg") %> ');
   background-position: 0% 40%;
-  /*font-size: 20px;*/
 }
 .slide-3 {
-  background-image: url('<%= image_path("source-code1.jpg") %> ');
+  background-image: url('<%= image_path("hd1.jpeg") %> ');
   background-position: 0% 40%;
-  font-size: 38px;
-}
-.slide-4 {
-  background-image: url('<%= image_path("hd.jpeg") %> ');
-  background-position: 0% 40%;
-  font-size: 38px;
-  background-position: 0% 0%;
 }
 
 .jumbotron:hover {
@@ -62,16 +54,13 @@
   color: white;
   text-decoration: underline;
 }
-.slide-img {
-  height: 400px;
-  width: auto;
-}
+
 .div-right {
   margin-top: -32px;
   margin-right: 15px;
   font-size: 16px;
   float: right;
-  width: 434px;
+  width: 534px;
   border-radius: 8px;
   background: rgba(12, 39, 1, 0.75);
   padding: 5px 5px 0px 10px;
@@ -85,23 +74,23 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <!-- <li data-target="#myCarousel" data-slide-to="4"></li> -->
    </ol>   
    <!-- Carousel items -->
    <div class="carousel-inner">
       <div class="item active slides slide-1">
-        <h2>Bit by Bit Recycling</h2>
+        <h2 style="margin-left: 20px;"><%= site_name_short %></h2>
         <div class="div-right">
           <h2>More than just computers</h2>
           <p>We take almost everything electronic with a very short list of items we cannot accept: 
           <ul><li>major household appliances,</li><li>air conditioners</li> <li>dehumidifiers</li><li>vacuums</li><li>microwave ovens</li>
           <li>copiers</li></ul>We are also not able to reycle large amounts of plastic (like VCR tapes and floppy disks). Please contact us via email or at 503-449-8357 for more details.</p>
         </div>
-      <p><a class="btn btn-primary btn-lg" role="button" style="margin-top: 221px;">Learn more &raquo;</a></p>
+      <!-- <p><a class="btn btn-primary btn-lg" role="button" style="margin-top: 221px;">Learn more &raquo;</a></p> -->
          <!-- <div class="carousel-caption">This Caption 1</div> -->
       </div>
       <div class="item slides slide-2">
+      <!-- <span class="glyphicon-class glyphicon glyphicon glyphicon-refresh"></span> -->
+        <h2 style="margin-left: 20px;"><%= site_name_short %></h2>
         <div class="div-right" style="margin-top: 10px">
           <h2>Let your used technology help others</h2>
           <p>A portion of refurbished computers are donated to local charities.</p>
@@ -110,11 +99,13 @@
         </div>
       </div>
       <div class="item slides slide-3">
-        <!-- <h1>Top Developer Challenges</h1> -->
-        <p style="margin-top: 120px"><blockquote><%= raw quote %></blockquote></p>
-      </div>
-      <div class="item slides slide-4">
-        <h1 style="top-margin: 100px; text-align: center;">Dashing Dashboard</h1>
+        <h2 style="margin-left: 20px;"><%= site_name_short %></h2>
+        <div class="div-right" style="margin-top: 10px">
+          <h2>Your Personal Data Is Safe</h2>
+          <p><strong><%= site_name_short %></strong> has a secure facility where computers are disassembled and processed for recycling. Computers have thier hard drives wiped to the <a href="http://en.wikipedia.org/wiki/National_Industrial_Security_Program">Department of Defense DOD 5220.22-M</a> standards.</p>
+          <p>You can feel confident that your data will not fall into the wrong hands.</p><br><br>
+          <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        </div>
       </div>
    </div>
    <!-- Carousel nav -->
@@ -127,20 +118,76 @@
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-4">
-      <h2>Reuse or Recycle</h2>
-      <p>Our primary mission is to extend the life of computers and electronic equipment that people no longer want or need.</p>
+      <h2>Reuse Over Recycle</h2>
+      <p>We believe computer recycling should be about keeping the item alive as long as possible. This is why we re-use and refurbish most of the computer related items we get; unlike other recyclers who destroy all items working or not. We make sure to refurbish and save.</p>
+      <p>We practice safe and efficient recycling. All items are handled in a safe manner at the lowest impact to the environment. Our goal is to reuse all items and extend the life as long as possible to provide a viable alternative to e-waste in our landfills.</p>
       <p><%= link_to "View Details &raquo;".html_safe, reuse_path, class: "btn btn-default" %></p>
     </div>
     <div class="col-md-4">
       <h2>Get Involved</h2>
-      <p><b>Bit by Bit</b> has many programs designed to get computers into the hands of those that need them. From our earn a computer in just 16 hours to our learn to build your own computer</p>
-      <p>As of January 2013, PHP was installed on more than 240 million websites (39% of those sampled) and 2.1 million web servers.</p>
+      <p><strong><%= site_name_short %></strong> has many programs designed to get computers into the hands of those that need them. From our <em>"Earn a computer in just 16 hours program"</em> to our <em>"Learn to build your own computer program"</em>.</p>
+      <p>Get involved, learn more about computers, and you can come away with a computer you know inside and out.</p>
       <p><%= link_to "View Details &raquo;".html_safe, involve_path, class: "btn btn-default" %></p>
    </div>
     <div class="col-md-4">
       <h2>Data Security</h2>
-      <p>Software development is more than just writing eligent code. During my development career I have worn many hats including: Database Architect, Documenter, Test Writer, Quality Assurer, Project Manager, and Team Leader, Team Morale Booster.</p>
+      <p>We know how important your personal information is and take the security of your data seriously. We ensure any data-containing items we receive are either wiped clean using Department of Defense standards, or physically destroyed on-site. <a href="">Learn more</a> about our data destruction process.</p>
       <p><%= link_to "View Details &raquo;".html_safe, secure_path, class: "btn btn-default" %></p>
     </div>
   </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Residential and Commercial Recycling</h2>
+      <p>We offer FREE electronics recycling to individuals and businesses. You can drop off your electronics to our facility FREE of charge. We also offer our pick-up service for a $45 fee (prices may vary).</p>
+      <center><h4>Items We Accept:</h4></center>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td valign="top" width="173">
+            <ul class="green_txt">
+              <li class="recycle_bullets">Computers</li>
+              <li class="recycle_bullets">Laptops</li>
+              <li class="recycle_bullets">Monitors (CRT, LCD)</li>
+              <li class="recycle_bullets">Printers / Scanners</li>
+              <li class="recycle_bullets">Fax / Copy</li>
+              <li class="recycle_bullets">Keyboards / Mice</li>
+            </ul>
+            </td>
+            <td valign="top" width="246">
+            <ul class="green_txt">
+              <li class="recycle_bullets">Servers /Routers /Hubs</li>
+              <li class="recycle_bullets">Networking Devices</li>
+              <li class="recycle_bullets">Communications Equipment</li>
+              <li class="recycle_bullets">Televisions</li>
+              <li class="recycle_bullets">VCRs, DVD players</li>
+              <li class="recycle_bullets">Stereos &amp; Audio Components</li>
+            </ul>
+            </td>
+            <td valign="top" width="206">
+            <ul class="green_txt">
+              <li class="recycle_bullets">Cell phones / Telephones</li>
+              <li class="recycle_bullets">PDAs, Handheld Games</li>
+              <li class="recycle_bullets">Cameras</li>
+              <li class="recycle_bullets">Misc. Electronics</li>
+              <li class="recycle_bullets">Misc. Office Machines</li>
+              <li class="recycle_bullets">Ink Cartridges</li>
+            </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-2">
+      <h2>Location</h2>
+      <address>
+        <strong><%= site_name_short %></strong><br>
+        4998 SE Briar Court<br>
+        Milwaukie, OR 97267<br>
+        503.449.8357<br>
+      </address>
+    </div>
+
 </div>
