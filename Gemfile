@@ -9,7 +9,8 @@ gem "rspec-rails", "~> 2.14.0"
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-  gem 'mysql2'
+  # gem 'mysql2'
+  gem 'sqlite3'
 end
 
 group :production, :staging do

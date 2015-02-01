@@ -1,3 +1,9 @@
-<% provide(:title, 'Page Name Here') %>
+<% provide(:title, 'Contact') %>
 <h1>Contact Us</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<address>
+	<strong><%= site_name_short %></strong><br>
+	4998 SE Briar Court<br>
+	Milwaukie, OR 97267<br>
+	503.449.8357<br>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:400px;width:500px;"><div id="gmap_canvas" style="height:400px;width:500px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.trivoo.net" id="get-map-data">trivoo.net</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(45.395289,-122.611917),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.395289, -122.611917)});infowindow = new google.maps.InfoWindow({content:"<b>Bit By Bit Recycling</b><br/>4998 SE Briar Ct.<br/>97267 Milwaukie" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+</address>

@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Turtles::Application.load_tasks
+BitByBit::Application.load_tasks
