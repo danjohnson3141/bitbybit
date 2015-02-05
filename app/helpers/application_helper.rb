@@ -4,6 +4,10 @@ module ApplicationHelper
     "Bit by Bit Recycling"
   end
 
+  def site_name_bold
+    raw "<strong>" + site_name_short + "</strong>"
+  end
+
   def site_name
     # Change the value below between the quotes.
     "Bit by Bit Recycling | Transforming Used Technology Into Opportunity"

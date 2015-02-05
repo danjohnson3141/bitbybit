@@ -66,7 +66,7 @@
   text-shadow: black 0.0em 0.0em 0.0em;
 }
 </style>
-
+<link rel="shortcut icon" href="http://faviconist.com/icons/08a9b15bf335f4c86f393876c7240d9d/favicon.ico" />
 <div id="myCarousel" class="carousel slide">
    <!-- Carousel indicators -->
    <ol class="carousel-indicators">
@@ -93,15 +93,15 @@
         <div class="div-right" style="margin-top: 10px">
           <h2>Let your used technology help others</h2>
           <p>A portion of refurbished computers are donated to local charities.</p>
-          <p>If you are a local area student you can earn a free computer from Bit by Bit by volunteering 16 hours of your time with us or another local charity</p><br><br>
-          <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+          <p>If you are a local area student you can earn a free computer from <%= site_name_short %> by volunteering 16 hours of your time with us or another local charity.</p><br><br>
+          <p><a href="<%= involve_path %>" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
         </div>
       </div>
       <div class="item slides slide-3">
         <h2 style="margin-left: 20px;"><%= site_name_short %></h2>
         <div class="div-right" style="margin-top: 10px">
           <h2>Your Personal Data Is Safe</h2>
-          <p><strong><%= site_name_short %></strong> has a secure facility where computers are disassembled and processed for recycling. Computers have thier hard drives wiped to the <a href="http://en.wikipedia.org/wiki/National_Industrial_Security_Program">Department of Defense DOD 5220.22-M</a> standards.</p>
+          <p><%= site_name_bold %> has a secure facility where computers are disassembled and processed for recycling. Computers have thier hard drives wiped to the <a href="http://en.wikipedia.org/wiki/National_Industrial_Security_Program">Department of Defense DOD 5220.22-M</a> standards.</p>
           <p>You can feel confident that your data will not fall into the wrong hands.</p><br><br>
           <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
         </div>
@@ -124,7 +124,7 @@
     </div>
     <div class="col-md-4">
       <h2>Get Involved</h2>
-      <p><strong><%= site_name_short %></strong> has many programs designed to get computers into the hands of those that need them. From our <em>"Earn a computer in just 16 hours program"</em> to our <em>"Learn to build your own computer program"</em>.</p>
+      <p><%= site_name_bold %> has many programs designed to get computers into the hands of those that need them. From our <em>"Earn a computer in just 16 hours program"</em> to our <em>"Learn to build your own computer program"</em>.</p>
       <p>Get involved, learn more about computers, and you can come away with a computer you know inside and out.</p>
       <p><%= link_to "View Details &raquo;".html_safe, involve_path, class: "btn btn-default" %></p>
    </div>
@@ -182,7 +182,13 @@
     <div class="col-md-2">
       <h2>Location</h2>
       <address>
-        <strong><%= site_name_short %></strong><br>
+        <h4><u>Mailing Address:</u></h4>
+        <%= site_name_bold %><br>
+        4230 SE King Rd. PMB 300<br>
+        Milwaukie, OR 97222<br>
+        503.449.8357
+        <h4><u>Warehouse/Lab:</u></h4>
+        <%= site_name_bold %><br>
         4998 SE Briar Court<br>
         Milwaukie, OR 97267<br>
         503.449.8357<br>
