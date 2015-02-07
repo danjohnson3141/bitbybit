@@ -35,8 +35,8 @@
   background-position: 0% 40%;
 }
 .slide-3 {
-  background-image: url('<%= image_path("hd1.jpeg") %> ');
-  background-position: 0% 40%;
+  background-image: url('<%= image_path("hd.jpeg") %> ');
+  background-position: 0% 20%;
 }
 
 .jumbotron:hover {
@@ -66,7 +66,6 @@
   text-shadow: black 0.0em 0.0em 0.0em;
 }
 </style>
-<link rel="shortcut icon" href="http://faviconist.com/icons/08a9b15bf335f4c86f393876c7240d9d/favicon.ico" />
 <div id="myCarousel" class="carousel slide">
    <!-- Carousel indicators -->
    <ol class="carousel-indicators">
@@ -102,8 +101,9 @@
         <div class="div-right" style="margin-top: 10px">
           <h2>Your Personal Data Is Safe</h2>
           <p><%= site_name_bold %> has a secure facility where computers are disassembled and processed for recycling. Computers have thier hard drives wiped to the <a href="http://en.wikipedia.org/wiki/National_Industrial_Security_Program">Department of Defense DOD 5220.22-M</a> standards.</p>
-          <p>You can feel confident that your data will not fall into the wrong hands.</p><br><br>
-          <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+          <p>You can feel confident that your data will not fall into the wrong hands.</p>
+          <br>
+          <%= link_to "Learn more &raquo;".html_safe, secure_path, class: "btn btn-primary btn-lg" %></p>
         </div>
       </div>
    </div>
