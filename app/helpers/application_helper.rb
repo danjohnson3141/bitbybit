@@ -10,7 +10,9 @@ module ApplicationHelper
 
   def site_name
     # Change the value below between the quotes.
-    "Bit by Bit Recycling | Transforming Used Technology Into Opportunity"
+    # "#{site_name_short} | Transforming Used Technology Into Opportunity"
+    # "Transforming Used Technology Into Opportunity"
+    site_name_short
   end
 
   def site_url

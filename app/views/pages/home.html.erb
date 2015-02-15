@@ -1,7 +1,7 @@
 <style>
 .carousel-control {
   margin-top: 0;
-  padding-top: 100px;
+  padding-top: 70px;
   font-size: 120px;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
   background-color: transparent;
@@ -11,7 +11,7 @@
 }
 .slides {
   margin-bottom: 0px;
-  min-height: 400px;
+  min-height: 320px;
   max-height: 450px;
   padding: 5px 80px 5px 80px;
   background-size: cover;
@@ -55,18 +55,19 @@
 }
 
 .div-right {
-  margin-top: -32px;
-  margin-right: 15px;
-  font-size: 16px;
-  float: right;
-  width: 534px;
+  margin-top: 20px;
+  /*margin-right: 15px;*/
+  font-size: 15px;
+ /* float: right;
+  width: 520px;*/
   border-radius: 8px;
   background: rgba(12, 39, 1, 0.75);
-  padding: 5px 5px 0px 10px;
+  padding: 1px 15px 5px 15px;
   text-shadow: black 0.0em 0.0em 0.0em;
 }
+
 </style>
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide" data-interval="3000">
    <!-- Carousel indicators -->
    <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -76,29 +77,26 @@
    <!-- Carousel items -->
    <div class="carousel-inner">
       <div class="item active slides slide-1">
-        <h2 style="margin-left: 20px;"><%= site_name_short %></h2>
         <div class="div-right">
           <h3>More than just computers</h3>
-          <p>We take almost everything electronic with a very short list of items we cannot accept: 
-          <ul><li>major household appliances,</li><li>air conditioners</li> <li>dehumidifiers</li><li>microwave ovens</li>
-          <li>copiers</li></ul>We are also not able to reycle large amounts of plastic (like VCR tapes and floppy disks). Please contact us via email or at 503-449-8357 for more details.</p>
+          <p>We take almost anything electronic with a short list of items we can't accept: 
+          <ul><li>major household appliances</li><li>air conditioners</li><li>microwave ovens</li>
+          <li>copiers</li></ul>We are also not able to reycle large amounts of plastic (like VCR tapes and floppy disks). Please contact us via <a href="mailto:bitbybitrecycling@gmail.com">email</a> or at 503-449-8357 for more details.</p>
         </div>
       <!-- <p><a class="btn btn-primary btn-lg" role="button" style="margin-top: 221px;">Learn more &raquo;</a></p> -->
          <!-- <div class="carousel-caption">This Caption 1</div> -->
       </div>
       <div class="item slides slide-2">
       <!-- <span class="glyphicon-class glyphicon glyphicon glyphicon-refresh"></span> -->
-        <h2 style="margin-left: 20px;"><%= site_name_short %></h2>
-        <div class="div-right" style="margin-top: 10px">
+        <div class="div-right">
           <h2>Let your used technology help others</h2>
           <p>A portion of refurbished computers are donated to local charities.</p>
-          <p>If you are a local area student you can earn a free computer from <%= site_name_short %> by volunteering 16 hours of your time with us or another local charity.</p><br><br>
+          <p>If you are a local area student you can earn a free computer from <%= site_name_short %> by volunteering 16 hours of your time with us or another local charity.</p><br>
           <p><a href="<%= involve_path %>" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
         </div>
       </div>
       <div class="item slides slide-3">
-        <h2 style="margin-left: 20px;"><%= site_name_short %></h2>
-        <div class="div-right" style="margin-top: 10px">
+        <div class="div-right">
           <h2>Your Personal Data Is Safe</h2>
           <p><%= site_name_bold %> has a secure facility where computers are disassembled and processed for recycling. Computers have thier hard drives wiped to the <a href="http://en.wikipedia.org/wiki/National_Industrial_Security_Program">Department of Defense DOD 5220.22-M</a> standards.</p>
           <p>You can feel confident that your data will not fall into the wrong hands.</p>
